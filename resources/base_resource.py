@@ -7,7 +7,7 @@ class BaseResource(Resource):
         self.__dao = dao
         self.__model_type = model_type
 
-    def get(self, id_ = None):
+    def get(self, id_=None):
         if id_:
             return self.__dao.read_by_id(id_)
         return self.__dao.read_all()
