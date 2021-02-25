@@ -8,6 +8,8 @@ authors = ["Marcello Santana <marcellosantana@live.com>"]
 python = "^3.9"
 Flask = "^1.1.2"
 Flask-RESTful = "^0.3.8"
+SQLAlchemy = "^1.3.23"
+pytest = "^6.2.2"
 
 [tool.poetry.dev-dependencies]
 

@@ -14,6 +14,4 @@ api.add_resource(Nome, '/api/name')
 def index():
     return render_template('index.html')
 
-
-
 app.run()
