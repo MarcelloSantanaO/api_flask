@@ -8,7 +8,8 @@ app = Flask(__name__)
 
 api = Api(app)
 
-api.add_resource(CategoryResource, '/api/category')
+api.add_resource(CategoryResource, '/api/category', endpoint='categories')
+api.add_resource(CategoryResource, '/api/category/<int:id_>', endpoint='category')
 
 
 @app.route('/')
